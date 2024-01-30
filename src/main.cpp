@@ -37,6 +37,8 @@ void loop() {
   meanNum1 = meanNum1/meanCount;
 
   sliderValue = meanNum0/meanNum1;
+
+  Serial.println(sliderValue);
   
   
   delay(50);  
