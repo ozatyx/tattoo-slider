@@ -1,3 +1,7 @@
+//Code to dim an LED using the slider as a dimming switch
+//Pins based off the Seeed Studio Xiao ESP32C3
+
+
 #include <Arduino.h>
 #include "CapacitiveSensor.h"
 
@@ -22,6 +26,7 @@ long output1;
 unsigned long timeOut = 100000;
 
 
+bool isBleConnected = false;
 
 void setup() {
   cap0.set_CS_AutocaL_Millis(0xFFFFFFFF);
